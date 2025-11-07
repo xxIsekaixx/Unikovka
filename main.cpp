@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 // Struktura pro jedno místo
@@ -25,4 +26,22 @@ struct Hrac {
     bool bren = false;
 };
 
+// Struktura zatím jen s názvem
+struct Area {
+    string name;
+};
 
+// Seznam oblastí
+vector<Area> mapa = {
+    {"Okraj lesa (únik)"},
+    {"Rádiová věž"},
+    {"Minové pole"},
+    {"Zřícená silnice"},
+    {"Protitankové dělo"},
+    {"Lesní stezka"},
+    {"Vojenské skladiště"},
+    {"Zničený most"},
+    {"Spawn"},
+    {"Tábor nepřátel"},
+    {"Okraj lesa (fake)"}
+};
